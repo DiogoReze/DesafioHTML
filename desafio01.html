@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <title>Desafio sobre HTML</title>
+    </head>
+    <body>
+        <small><a href="https://diegomariano.com/fundamentos-do-html/">Fonte</a></small>
+        <h1><strong>Introdução ao HTML</strong></h1>
+        <h2 id="inicio">Índice:</h2>
+        <ul>
+            <li> <a href="#introducao">Introdução</a> </li>
+            <li> <a href="#historia">História</a> </li>
+            <li> <a href="#html5">HTML5</a> </li>
+            <li> <a href="#sintaxe">Sintaxe HTML</a> </li>
+            <li> <a href="#paginaelementos">Elementos de uma página HTML</a> </li>
+            <li> <a href="#cabecalho">Cabeçalho</a></li>
+            <li> <a href="#corpo">Corpo</a></li>
+            <li> <a href="#comentarios">Comentários HTML</a></li>
+            <li> <a href="#formatacao">Formatação</a></li>
+            <li> <a href="#quebralinha">Quebra de linha</a></li>
+            <li> <a href="#titulos">Títulos</a></li>
+            <li> <a href="#regua">Reguas</a></li>
+            <li> <a href="#reguahoriz">Regua Horizontal</a></li>
+            <li> <a href="#imagem">Imagens</a></li>
+            <li> <a href="#link">Links</a></li>
+        </ul>
+
+        <h2 id="introducao">Introdução</h2>
+        <p>HTML (Hypertext Markup Language ou na tradução para o português Linguagem de Marcação de Hipertexto) </p>
+        <p>é uma linguagem utilizada para construção de páginas de Internet. HTML define um conjunto de regras </p>
+        <p>que permite a formatação de páginas. Um documento HTML consiste em um arquivo de texto que será lido </p>
+        <p>e interpretado como uma página por browsers (navegadores), como por exemplo, Chrome, Firefox, Opera, Edge ou Safari.</p>
+        <p>Construir páginas em HTML é o principal método para divulgação de conteúdo na Internet. Apesar de haver </p>
+        <p>diversos editores que permitem a construção de páginas sem a necessidade de alterar o código-fonte, </p>
+        <p>compreender a sintaxe dessa linguagem é de grande importância. Dominar a linguagem HTML é essencial </p>
+        <p>para dominar a Web.</p>
+        <a href="https://www.w3.org/html" target="_blank">Página Oficial</a>
+        <p></p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="historia">História</h2>        
+        <p>HTML surgiu no princípio da década de 1990, após Tim Berners-Lee e colaboradores implementarem a comunicação </p>
+        <p>entre máquinas usando o protocolo HTTP. A linguagem HTML foi inspirada na metalinguagem SGML, criada na década </p>
+        <p>1960 pela IBM. HTML herdou algumas características do SGML para estruturação de texto, como por exemplo o uso de </p>
+        <p>tags. Anos mais tarde, um grupo informal de pesquisadores lançou novas versões do HTML. A partir de 1996, a </p>
+        <p>linguagem HTML passou a ser mantida pela W3C (World Wide Web Consortium). A partir da versão 3.5 do HTML, </p>
+        <p>o grupo de pesquisadores passou a trabalhar numa versão do HTML mais simples de ser processada, baseada em XML.</p> 
+        <p>Em 1999, surge a versão 4.01, a última especificação lançada pela W3C antes da versão 5. </p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="html5">HTML5</h2>
+        <p>HTML5 é a mais recente versão da linguagem HTML. Trouxe novas funcionalidades e perspectivas em relação </p>
+        <p>ao papel exercido pelo HTML na Web. HTML traz novas tags, como <i>header</i> para cabeçalhos, <i>nav</i> para menus, </p>
+        <p><i>video</i> e <i>audio</i> para respectivos elementos, além de apresentar uma sintaxe mais simples como por exemplo </p>
+        <p>para declaração do DOCTYPE.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="sintaxe">Sintaxe HTML</h2>
+        <p>Uma página HTML contém marcas, também denominadas tags, que fazem a marcação do conteúdo. As tags indicam ao navegador </p>
+        <p>como um conjunto de elementos deve ser exibido na tela. Tags são delimitadas pelos parênteses angulares: caracteres </p>
+        <p>< (menor que) e > (maior que). Elas ainda podem conter atributos. As tags podem ser compostas por elementos simples, </p>
+        <p>que não possuem filhos, e elementos compostos, que podem possuir filhos.   </p>
+        <p>Elemento simples:</p>
+        <p> tag </p>
+        <p>Elemento composto:</p>
+        <p><i>tag</i>Conteúdo<i>/tag</i></p>
+        <p>Além disso, tags podem apresentar atributos que agregam novas especificações aos elementos.</p>
+        <p><tag atributo=“valor”>Conteúdo</tag></p>
+        <p>Diz-se que uma tag é filha de outra se esta se encontra dentro das delimitações. Observe:</p>
+        <p>
+            <tag_1>     
+                <tag_2></tag_2>     
+                <tag_3></tag_3>     
+                <tag_4></tag_4>  
+            </tag_1>
+        </p>
+        <p>No exemplo acima, as tags 2, 3 e 4 são filhas da tag 1, pois se encontram no mesmo nível. A tag 1 </p>
+        <p>é pai das tags 2, 3 e 4. Pode ainda dizer que 2, 3 e 4 são tags irmãs.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="paginaelementos">Elementos de uma página HTML</h2>
+        <p>Uma página HTML é composta por alguns elementos básicos. São eles: (i) a declaração do tipo do documento;</p>
+        <p>(ii) a tag HTML, que armazenará todo conteúdo da página; (iii) o cabeçalho, que armazena informações </p>
+        <p>estruturais da página; e (iv) o corpo, que armazenará os conteúdos e formatações da página.</p>
+        
+        <p>O conteúdo de <i>html</i> é dividido por duas outras tags: <i>head</i> e <i>body</i>. Em <i>head</i> todas as declarações de </p>
+        <p>informações necessárias para a página são realizadas. Por exemplo, dentro de <i>head</i> é feita a declaração da tag</p>
+        <p><i>title</i>, que informa que o título da página será “Hello”. Dentro da tag <i>body</i> é inserido o conteúdo que </p>
+        <p>gostaríamos de exibir. Observe que a frase é flanqueada pela tag <i>p</i>, que indica que o conteúdo se trata de </p>
+        <p>um parágrafo. Observe também como as tags são fechadas. A tag <i>p</i> é filha da tag <i>body</i>, pois <i>p</i> é declarada </p>
+        <p>entre a abertura da tag <i>body</i> e o fechamento <i>/body</i>.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="cabecalho">Cabeçalho</h2>
+        <p>A tag <i>head</i> armazena as informações descritivas de um site. As informações armazenadas no cabeçalho não são exibidas </p>
+        <p>pelos navegadores. Além da tag de título <i>title</i>, o cabeçalho aceita outros tipos de tags, como por exemplo:</p>
+        <ul>
+            <li><i>style</i>: marcações de estilo;</li>
+            <li><i>link</i>: permite a inserção de links externos. Usado por exemplo para adição de folhas de estilo CSS;</li>
+            <li><i>script</i>: permite a inserção de scripts na página;</li>
+            <li><p><i>meta</i>: permite a inserção de metadados nos documentos, como por exemplo, conjunto de caracteres </p>
+                <p>utilizado (charset), nome do autor (author), palavras-chave (keywords), descrição (description) e o tipo </p>
+                <p>de janela para exibição (viewport).</p>
+            </li>
+        </ul>
+        <p>O conjunto de caracteres (charset) define o formato de codificação usado no documento. O conjunto UTF-8 contém </p>
+        <p>caracteres necessários para nosso idioma, como por exemplo os acentos e cedilha. O valor viewport indica ao navegador </p>
+        <p>qual será a largura da página carregada pelo navegador dependendo do dispositivo usado para acesso. O trecho initial-scale=1.0 </p>
+        <p>indica o nível de zoom que a página será carregada.</p>
+        <p>Até a versão 4 do HTML, a tag <i>head</i> era obrigatória. A partir do HTML5 ela passou a ser opcional.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+        
+        <h2 id="corpo">Corpo <i>body</i></h2>
+        <p>No corpo da página são inseridas todas as informações que serão exibidas pelo navegador. Algumas tags não são exibidas</p>
+        <p>como por exemplo scripts e comentários.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="comentarios">Comentários em HTML</h2>
+        <p>Comentários são estruturas do código que serão ignorados pelos navegadores na hora do processamento da página. </p>
+        <p>Comentários são importantes para organização e documentação do código, ou seja, servem para explicar a função de </p>
+        <p>um determinado trecho do programa. Bons programadores sempre comentam seus códigos.</p>
+        <p>Em HTML, comentários são inseridos entre o conjunto de caracteres <!-- e -->. Comentários podem ter uma ou múltiplas linhas.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="formatacao">Formatação de Textos</h2>
+        <p>A seguir, aprenderemos a alterar o tamanho dos textos, fontes e cores. Aprenderemos também a forçar quebras de linhas, </p>
+        <p>inserir linhas delimitadoras e listas.</p>
+        <p>Há diversas formas de inserir formatações em textos, dentre elas pode-se:</p>
+        <ul>
+            <li>criar um arquivo de folha de estilo CSS (nos próximos capítulos nos aprofundaremos nas folhas de estilo);</li>
+            <li>utilizar a tag <i>style</i>;</li>
+            <li>inserir a formatação diretamente no elemento: atributo <i>style</i>.</li>
+        </ul>
+        <p>Para inserir a formatação diretamente no elemento podemos utilizar um atributo nativo da tag ou mesmo utilizar o atributo style.</p>
+        <p>Por exemplo, vamos alterar o tamanho de um texto.</p>
+        <!-- Tamanho normal -->
+        <p>Olá, mundo!</p>
+        <!-- Tamanho maior -->
+        <p style="font-size:50px">Olá, mundo novamente!</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="quebralinha">Quebra de linha</h2>
+        <p>Aprendemos no capítulo anterior que parágrafos são declarados dentro da tag <i>p</i>. </p>
+        <p>Entretanto, se escrevermos um texto grande, a organização da página será dada pela resolução, </p>
+        <p>ou seja, o tamanho da janela. Podemos forçar uma quebra de linha usando a tag <i>br</i>.</p>
+        <p>Olá mundo, <br> novamente!</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="marcacoesenfase">Marcações de ênfase</h2>
+        <p>Aprendemos no capítulo anterior que elementos textuais podem ser declarados por meio da tag de parágrafos <i>p</i>. </p>
+        <p>Entretanto existem tags que permitem inserir ênfase no texto. São elas:<i>/p</i>
+        <ul>
+            <li><i>b</i> Texto em negrito</li>
+            <li><i>i</i> Texto em itálico</li>
+            <li><i>u</i> Texto sublinhado</li>
+            <li><i>sub</i> Texto subscrito</li>
+            <li><i>sup</i> Texto sobrescrito</li>
+            <li><i>big</i> Texto com fonte maior do que o padrão</li>
+            <li><i>small</i> Texto com fonte menor do que o padrão</li>
+            <li><i>em</i> Texto em itálico</li>
+            <li><i>strong</i> Texto em negrito</li>
+        </ul>
+        <p>No exemplo a seguir, veremos o impacto das marcações de ênfase na estrutura de um texto.</p>
+            <p>
+                <b>Texto em negrito</b><br>
+                <i>Texto em itálico</i><br>
+                <u>Texto sublinhado</u><br>
+                <sub>Texto subscrito</sub><br>
+                <sup>Texto sobrescrito</sup><br>
+                <big>Texto com fonte maior do que o padrão</big><br>
+                <small>Texto com fonte menor do que o padrão</small><br>
+                <em>Texto em itálico</em><br>
+                <strong>Texto em negrito</strong>
+            </p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="titulos">Títulos</h2>
+        <p>HTML apresenta tags especialmente desenvolvidas para declaração de títulos. As tags de títulos permitem a </p>
+        <p>alteração do tamanho do texto em cinco níveis: <i>h1</i>, <i>h2</i>, <i>h3</i>, <i>h4</i>, <i>h5</i> e <i>h6</i>. </p>
+        <p>Sendo que quanto menor o nível, maior a fonte, ou seja, textos dentro da tag <i>h1</i> terão um tamanho maior que <i>h6</i>.</p>
+        <h1>Título h1</h1>
+        <h2>Título h2</h2>
+        <h3>Título h3</h3>
+        <h4>Título h4</h4>
+        <h5>Título h5</h5>
+        <p>Texto em parágrafo comum</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h2 id="regua">Reguas</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <h3 id="reguahoriz">Regua Horizontal <i>hr</i></h3>
+        <p>A régua horizontal <hr> permite a inserção de uma linha que dividirá a página. Observe o exemplo a seguir:</p>
+        <h4>Régua horizontal</h4>
+        <p>
+            Parte superior 
+            <hr> 
+            Parte inferior 
+        </p>
+        <p>Atributos usados na construção de réguas horizontais:</p>
+        <ul>
+            <li>size: define a espessura da linha em pixels;</li>
+            <li>width: define a largura da linha em pixels (pode-se utilizar um valor em porcentagem);</li>
+            <li>align: define o alinhamento da linha no centro (center), esquerda (left) ou direita (right);</li>
+            <li>color: define a cor da linha.</li>
+        </ul>
+            <h4>Régua horizontal</h4>
+
+            <p>Régua com 10px de espessura, 50% de largura, alinhamento central e cor cinza</p>
+
+            <hr size="10px" width="50%" align="center" color="grey">
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h3 id="imagem">Imagens</h3>
+        <p>HTML permite a inserção de imagens em páginas através da tag <i>img</i>. A partir do HTML as tags </p>
+        <p><i>figure</i> e <i>figcaption</i> foram inseridas, permitindo assim a inserção de legendas para as imagens. </p>
+        <p>A tag <img> requer obrigatoriamente o atributo src (deriva de source ou fonte), que armazena o endereço e nome </p>
+        <p>da imagem a ser inserida.</p>
+        <p>Podemos ainda aplicar alguns atributos a imagens, como por exemplo:</p>
+        <ul>
+            <li>alt: texto exibido por navegadores quando a imagem não puder ser carregada. Essa tag é também lida por programas de acessibilidade;</li>
+            <li>align: define o alinhamento da imagem. Pode ser: alinhada ao topo (top), no meio (middle), abaixo (bottom), esquerda (left) ou direita (right);</li>
+            <li>height: define a altura da imagem (valor em pixels, porcentagem, etc.);</li>
+            <li>width: define a largura da imagem (valor em pixels, porcentagem, etc.);</li>
+            <li>vspace: margem entre a imagem e textos; superior e inferior;</li>
+            <li>hspace: margem entre a imagem e os textos; lados esquerdo e direito;</li>
+            <li>border: insere uma borda na imagem.</li>
+        </ul>
+        <p>Podemos ainda utilizar ainda o atributo style e suas propriedades para inserir modificações em imagens. Muitas </p>
+        <p>propriedades de estilo têm função similar aos atributos. Por exemplo, é possível alterar a altura de uma imagem </p>
+        <p>usando a propriedade height do atributo style: <i>img style=“height:200px” src=”1bga.jpg”</i>. Esse comando, que altera </p>
+        <p>o tamanho da imagem para 200px, seria equivalente a: <i>img height=”200px” src=”1bga.jpg”</i>.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+
+        <h3 id="link">Links</h3>
+        <p>Links permitem ligações entre páginas diferentes. No HTML são determinados pela tag <i>a</i>. </p>
+        <p>Essa tag requer o atributo href que indicará o endereço a qual o link deverá abrir.</p>
+        <p><a href="#">Link</a></p>
+        <p>Utilizamos o valor “#” para o atributo href quando queremos que o link não carregue nenhuma página. </p>
+        <p>Declarar uma tag <i>a</i> com o atributo href sem nenhum valor atribuído indica que a página deverá ser recarregada </p>
+        <p>ao clicar no link.</p>
+        <p>No exemplo a seguir utilizaremos um link para abrir uma página externa da internet.</p>
+        <a href="http://www.google.com.br">Abrir Google</a>
+        <p></p>
+        <p>É possível acessar páginas externas indicando o endereço da página e o protocolo “http:”. Para links </p>
+        <p>de endereços de e-mail utilize “mailto:”. Para arquivos locais, indique apenas o nome do arquivo, caso </p>
+        <p>esteja no mesmo diretório, ou o endereço local, levando em consideração o diretório atual.</p>
+
+        <p>Além do atributo href, a tag <a> ainda recebe outros atributos, como por exemplo:<i>/a</i></p>
+        <ul>
+            <li>name: indica o nome da âncora;</li>
+            <li>target: indica o tipo de janela a qual o link será aberto. Pode ser: nova janela (_blank), no mesmo frame (_self), na mesma janela (_top) ou no frameset principal (_parent);</li>
+            <li>rel: define o tipo do link;</li>
+            <li>acesskey: permite a configuração de uma tecla de atalho ao link;</li>
+            <li>onclick: permite eventos JavaScript. Atribui uma ação quando o link for clicado;</li>
+            <li>onmouseover: permite eventos JavaScript. Atribui uma ação quando o cursor sobrepor o link;</li>
+            <li>onmouseout: permite eventos JavaScript. Atribui uma ação quando o cursor sair do link.</li>
+        <ul>
+        <p></p>
+        <small><a href="#inicio">(Voltar)</a></small>
+        
+    </body>
+</html>
